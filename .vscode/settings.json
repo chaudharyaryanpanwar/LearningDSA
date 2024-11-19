@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "iostream": "cpp",
+        "vector": "cpp",
+        "__bit_reference": "cpp"
+    },
+    "C_Cpp.default.cppStandard": "gnu++17",
+    "C_Cpp.default.compilerPath": "/usr/bin/clang++",
+    "C_Cpp.default.compilerArgs": ["-std=c++17"]
+}

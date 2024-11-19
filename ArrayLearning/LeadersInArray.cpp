@@ -11,14 +11,14 @@ I/P : { 7 , 10 . 4 , 10 , 6, 5, 2}
 O/P : { 2 , 5 , 6 , 10}
 */
 
-void leaders(vector <int> &arr){
+void leaders(vector <int> & arr){
     int n = arr.size() ; 
     int max = arr[n-1];
-    cout << max << " ";
-    for (int i = n -2 ; i>=0 ; i--){
+    cout << max  << " ";
+    for (int i = n -1 ; i>=0 ; i--){
         if (arr[i]>max){
             max = arr[i];
-            cout << arr[i] << " ";
+            cout << max  << " ";
         }
     }
 }
