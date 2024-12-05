@@ -24,17 +24,27 @@ Explanation: Subarray 7, 6, 5, -4, -1, -1, 40 gives the maximum sum, that is 52.
 */
 
 int maximumCircularSubarraySum(vector <int> &arr){
-    int n = arr.size();
-    int sum =arr[0];
-    int minSum = arr[0];
-    for (int i=0 ; i<n ; i++){
-        sum = min(sum + arr[i] , arr[i]);
-        minSum = min(sum , minSum);
-    }
-    int totalSum =0 ; 
-    for (int i : arr)totalSum += i ; 
-    
-    return (totalSum - minSum ) ; 
+    int n= arr.size() ; 
+        int sum =0  , maxSum = INT_MIN ; 
+        int val = 0 , minSum = INT_MAX ; 
+        int totalSum =0 ; 
+        for (int i = 0 ; i<n ; i++){
+            sum += arr[i];
+            maxSum = max(sum , maxSum);
+            if (sum<0)sum =0 ; 
+            
+            val += arr[i];
+            minSum = min(val , minSum);
+            if (val >0)val = 0; 
+            
+            totalSum += arr[i];
+        }
+        totalSum -= minSum ;
+        if (totalSum > maxSum && maxSum >= 0){
+            return totalSum ; 
+        } else {
+            return maxSum ; 
+        }
 }
 int main() {
     vector <int> arr = {8, -8, 9, -9, 10, -11, 12} ;
