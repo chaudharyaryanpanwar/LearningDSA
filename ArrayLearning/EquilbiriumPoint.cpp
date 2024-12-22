@@ -22,7 +22,8 @@ A[0] + A[1] + A[2] = A[4] + A[5] + A[6]
 Input: A[] = {1, 2, 3} 
 Output: -1 
 */
-int naiveSol(vector <int> arr){ // T : O(N^2)
+int naiveSol(vector <int> arr){  //T : O(N)
+
     int n = arr.size() ; 
     for (int i =0 ; i<n ; i++){
         int ls = 0  , rs = 0 ; 
