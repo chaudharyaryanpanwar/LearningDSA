@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Define the file extensions to delete
+# Define the file extensions to deletep
 extensions=("*.o" "*.out" "*.exe" "*.a" "*.so" "*.obj" "*.bin")
 
 # Loop through each extension and delete the files

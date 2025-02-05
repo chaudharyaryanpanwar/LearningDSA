@@ -85,8 +85,8 @@ int main()
     vector <int > weight = { 10, 20, 30 }; 
     int W = 50;
     int n = profit.size() ; 
-    cout << knapsackRecursion(W, weight, profit, n)<<endl ;
-    cout << callerKnapsackMemoization(W , weight , profit , n )<<endl ; 
+    // cout << knapsackRecursion(W, weight, profit, n)<<endl ;
+    // cout << callerKnapsackMemoization(W , weight , profit , n )<<endl ; 
     cout << knapsackTabulation(W , weight , profit , n);
     return 0;
 }
