@@ -47,6 +47,7 @@ vector <vector <string>> groupAnagrams(vector <string> & strs){
     }
     return result ; 
 }
+
 int main() {
     vector <string> strs = {"eat", "tea", "tan", "ate", "nat", "bat" };
     vector <vector <string>> result = groupAnagrams(strs) ;
