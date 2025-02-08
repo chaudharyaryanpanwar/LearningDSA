@@ -14,3 +14,4 @@ clean_binaries.sh
 
 # Ignore the codevita folder
 codevita/
+.gitignore
