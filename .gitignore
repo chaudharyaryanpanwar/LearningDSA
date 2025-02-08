@@ -1,0 +1,16 @@
+# Ignore the .vscode folder
+.vscode/
+
+# Ignore the clean_binaries.sh script
+clean_binaries.sh
+
+# Ignore binary executable files
+*.exe
+*.out
+*.bin
+
+# Ignore .DS_Store files
+.DS_Store
+
+# Ignore the codevita folder
+codevita/
