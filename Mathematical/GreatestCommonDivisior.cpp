@@ -13,6 +13,6 @@ int gcd(int a , int b){
     else return gcd(b , a%b);
 }
 int main() {
-    cout << gcd(13, 45);
+    cout << gcd(15, 65);
     return 0;
 }
